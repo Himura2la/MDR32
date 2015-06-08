@@ -1,14 +1,10 @@
 #include <MDR32F9Qx_port.h>
 #include <MDR32F9Qx_rst_clk.h>
 #include <MDR32F9Qx_adc.h>
-#include <MDR32F9Qx_dac.h>
 #include <stdbool.h>
-
 
 #define delay(T) for(i = T; i > 0; i--)
 int i;
-
-uint16_t ADCConvertedValue[10];
 
 ADC_InitTypeDef ADC;
 ADCx_InitTypeDef ADC1;

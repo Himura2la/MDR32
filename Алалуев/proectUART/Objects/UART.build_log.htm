@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Roman Admin, Microsoft, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.11.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\MILANDR\proectUART\UART.uvprojx
+Project File Date:  06/02/2015
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling main.c...
+main.c(23): warning:  #177-D: variable "ReciveByte" was declared but never referenced
+      static uint8_t ReciveByte=0x00; //äàííûå äëÿ ïðèåìà
+main.c: 1 warning, 0 errors
+compiling MDR32F9Qx_it.c...
+compiling core_cm3.c...
+assembling startup_MDR32F9Qx.s...
+compiling system_MDR32F9Qx.c...
+compiling MDR32F9Qx_port.c...
+compiling MDR32F9Qx_rst_clk.c...
+compiling MDR32F9Qx_uart.c...
+linking...
+Program Size: Code=2728 RO-data=224 RW-data=20 ZI-data=1660  
+".\Objects\UART.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDR1986BExx.1.3.0.pack
+                Keil::Device:Startup_MDR1986BE9x:1.3.0
+                Milandr MDR1986BExx Series Device Support, Drivers and Examples
+   * Component: Startup_MDR1986BE9x Version: 1.3.0
+   * Component: PORT Version: 1.3.0
+   * Component: RST_CLK Version: 1.3.0
+   * Component: UART Version: 1.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\MILANDR\proectUART\RTE
+  D:\MILANDR\proectUART\RTE\Device\MDR1986BE91
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Config
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Libraries\CMSIS\CM3\CoreSupport
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Libraries\MDR32F9Qx_StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup_MDR1986BE9x:1.3.0
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c
+      Include file:  Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h
+      Include file:  Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+      Source file:   Libraries\CMSIS\CM3\CoreSupport\core_cm3.c
+      Include file:  Config\MDR32F9Qx_config.h
+
+   * Component: Keil::Drivers:PORT:1.3.0
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_port.c
+
+   * Component: Keil::Drivers:RST_CLK:1.3.0
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_rst_clk.c
+
+   * Component: Keil::Drivers:UART:1.3.0
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_uart.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_uart.c
+</pre>
+</body>
+</html>
