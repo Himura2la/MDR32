@@ -6,6 +6,8 @@
 #define delay(T) for(i = T; i > 0; i--)
 int i;
 
+#define SCALE 1252.5
+
 ADC_InitTypeDef ADC;
 ADCx_InitTypeDef ADC1;
 
@@ -41,7 +43,7 @@ void ADC_IRQHandler() {
 		channel = (rawResult & 0x1F0000) >> 16;
 		rawResult &= 0x00FFF;
 		
-		result = (float)rawResult / (float)1257;
+		result = (float)rawResult / (float)SCALE;
 		
 		conInProgress = false;
 		NVIC_ClearPendingIRQ(ADC_IRQn);
